@@ -1,3 +1,5 @@
+import { ProjectCard } from "./ProjectCard"
+
 export const Projects = ()=>{
     const projects =[
         {
@@ -55,9 +57,12 @@ export const Projects = ()=>{
                         <Tab.Pane eventKey="first">
                             <Row>
                                 {
-                                    projects.map((projects,index)=>{
+                                    projects.map((project,index)=>{
                                         return(
-                                            <p>{projects.title}</p>
+                                            <ProjectCard
+                                                key={index}
+                                                {...project}
+                                            />
                                         )
                                     })
                                 }
