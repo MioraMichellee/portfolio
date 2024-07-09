@@ -1,59 +1,52 @@
+import { Container } from "react-bootstrap"
 import { ProjectCard } from "./ProjectCard"
+import colorSharp2 from "../assets/img/color-sharp2.png"
+import {Col,Nav, Tab, Row} from "react-bootstrap"
+import projImg1 from "../assets/img/portfolio.png"
+import projImg2 from "../assets/img/portfolio.png"
+import projImg3 from "../assets/img/portfolio.png"
 
 export const Projects = ()=>{
     const projects =[
         {
-            title:"",
+            title:"Portfolio",
             description:"",
-            imgUrl:projImg,
+            imgUrl:projImg1,
         },
         {
-            title:"",
+            title:"CitizenConnect ",
             description:"",
-            imgUrl:projImg,
+            imgUrl:projImg2,
         },
         {
-            title:"",
+            title:"Vanilla Pay",
             description:"",
-            imgUrl:projImg,
+            imgUrl:projImg3,
         },
-        {
-            title:"",
-            description:"",
-            imgUrl:projImg,
-        },
-        {
-            title:"",
-            description:"",
-            imgUrl:projImg,
-        },
-        {
-            title:"",
-            description:"",
-            imgUrl:projImg,
-        },
+        
         
     ]
         
     return (
-        <section >
+    <section className="project" id="project">
+        <Container>
             <Row>
                 <Col>
-                    <h2></h2>
-                    <p></p>
+                    <h2>Projects & Certifications</h2>
+                    <p>Lorem</p>
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" defaultActiveKey="/home">
                         <Nav.Item>
-                            <Nav.Link eventKey="first">Tab one </Nav.Link>
+                            <Nav.Link eventKey="first">Projects </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="second">Tab two</Nav.Link>
+                            <Nav.Link eventKey="second">Certifications</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="third">Tab three</Nav.Link>
+                            <Nav.Link eventKey="third">Badges</Nav.Link>
                         </Nav.Item>
                     </Nav>
-                    <Tab.Content>
+                    <Tab.Content> <br/><br/>
                         <Tab.Pane eventKey="first">
                             <Row>
                                 {
@@ -74,6 +67,8 @@ export const Projects = ()=>{
                     </Tab.Container>
                 </Col>
             </Row>
-        </section>
+        </Container>
+        {/* <img className="backgroung-image-right" src={colorSharp2}/> */}
+    </section>
     )
 }
