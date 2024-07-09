@@ -1,7 +1,10 @@
 import { useState , useEffect } from "react";
 import { Container, Row, Col} from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
+import mercury from "../assets/img/mercury.png"
+import saturne from "../assets/img/saturne.png"
 import headerImg from "../assets/img/mi-astronaute.png"
+
 
 export const Banner = () => {
 
@@ -42,6 +45,11 @@ export const Banner = () => {
     }
     return(
         <section className="banner" id="home">
+            <img src={mercury} className="absolute mercury-img" />
+            <div className="rotate">
+            <img src={saturne} className="absolute saturne-img" />
+            </div>
+            
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>

@@ -81,24 +81,40 @@ p.success {
 p.danger {
 	color: red;
 }
-/******* Blur *******************/
-.blur{
-  width: 24rem;
-  height: 22rem;
+
+/* ***************** Absolute ******************** */
+.absolute {
   position: absolute;
+}
+
+.mercury-img{
+  width: 10%;
+}
+.saturne-img{ 
+  width: 11rem;
+  margin-top: 17%;
+}
+.rotate{
+  transform: rotate(-25deg);
+  margin-left: 84%;
+}
+/******* Blur *******************/
+.blur1{
+  width: 29rem;
+  height: 24rem;
+  
+  background: #c37a39;
+  margin-left: 61%;
+  margin-top: 42rem;
   border-radius: 84%;
   filter: blur(72px);
-  background: #c37a39;
-  margin-left: 57rem;
-  margin-top: 40rem;
 }
 .blur2{
   width: 4rem;
   height: 12rem;
-  position: absolute;
-  border-radius: 84%;
-  filter: blur(66px);
-  background: #a94803;
+  /* background: #a94803;4 */
+  background-image: linear-gradient(#49270D, #DF8C1B);
+  filter: blur(72px);
   margin-top: 16rem;
 }
 /************ Navbar Css ************/
