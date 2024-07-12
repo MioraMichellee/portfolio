@@ -1,6 +1,5 @@
 import { Container } from "react-bootstrap"
 import { ProjectCard } from "./ProjectCard"
-import colorSharp2 from "../assets/img/color-sharp2.png"
 import {Col,Nav, Tab, Row} from "react-bootstrap"
 import projImg1 from "../assets/img/portfolio.png"
 import projImg2 from "../assets/img/portfolio.png"

@@ -3,8 +3,7 @@ import { Container,Col,Row } from "react-bootstrap";
 import "react-multi-carousel/lib/styles.css";
 import meter1 from "../assets/img/60.png";
 import meter2 from "../assets/img/70.png";
-import meter3 from "../assets/img/80.png";
-import colorSharp from "../assets/img/color-sharp.png"
+import meter3 from "../assets/img/80.png"
 
  export const Skills = () =>{
     const responsive = {
@@ -38,19 +37,19 @@ import colorSharp from "../assets/img/color-sharp.png"
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</p>
                             <Carousel responsive={responsive} infinite = {true} className="skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="image1"/>
+                                    <img src={meter1} alt="1"/>
                                     <h5>Web Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="image2"/>
+                                    <img src={meter2} alt="2"/>
                                     <h5>Brand identity</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="image3"/>
+                                    <img src={meter3} alt="3"/>
                                     <h5>Web Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter1} alt="image4"/>
+                                    <img src={meter1} alt="4"/>
                                     <h5>Web Development</h5>
                                 </div>
                             </Carousel>
