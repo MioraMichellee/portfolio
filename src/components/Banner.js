@@ -1,4 +1,4 @@
-import { useState , useEffect } from "react";
+import { useState , useEffect , useCallback} from "react";
 import { Container, Row, Col} from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import mercury from "../assets/img/mercury.png"
@@ -15,36 +15,35 @@ export const Banner = () => {
     const [delta, setDelta] = useState('');
     const period = 2000;
 
-  
-
-    const tick = () =>{
+    const tick = useCallback(() => {
         let i = loopNum % toRotate.length;
         let fullText = toRotate[i];
-        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0,text.length +1);
+        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
 
         setText(updatedText);
 
-        if (isDeleting){
-            setDelta(prevDelta => prevDelta/2)
+        if (isDeleting) {
+            setDelta(prevDelta => prevDelta / 2);
         }
-        if (!isDeleting && updatedText === fullText)  {
+
+        if (!isDeleting && updatedText === fullText) {
             setIsDeleting(true);
             setDelta(period);
-        }
-        else if(isDeleting && updatedText === ''){
+        } else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
-            setLoopNum(loopNum +1);
+            setLoopNum(loopNum + 1);
             setDelta(500);
         }
-    }
+    }, [isDeleting, loopNum, text, toRotate, period]);
 
     useEffect(() => {
         let ticker = setInterval(() => {
             tick();
-        },delta)
+        }, delta);
 
-        return () =>{ clearInterval(ticker)};
-    } ,[text,delta,tick])
+        return () => { clearInterval(ticker); };
+    }, [text, delta, tick]);
+
     return(
         <section className="banner" id="home">
             <img src={mercury} className="absolute mercury-img" alt="mercury"/>
