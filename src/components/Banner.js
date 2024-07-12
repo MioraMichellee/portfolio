@@ -15,13 +15,7 @@ export const Banner = () => {
     const [delta, setDelta] = useState('');
     const period = 2000;
 
-    useEffect(() => {
-        let ticker = setInterval(() => {
-            tick();
-        },delta)
-
-        return () =>{ clearInterval(ticker)};
-    } ,[text,delta,tick])
+  
 
     const tick = () =>{
         let i = loopNum % toRotate.length;
@@ -43,6 +37,14 @@ export const Banner = () => {
             setDelta(500);
         }
     }
+
+    useEffect(() => {
+        let ticker = setInterval(() => {
+            tick();
+        },delta)
+
+        return () =>{ clearInterval(ticker)};
+    } ,[text,delta,tick])
     return(
         <section className="banner" id="home">
             <img src={mercury} className="absolute mercury-img" alt="mercury"/>
