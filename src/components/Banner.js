@@ -21,7 +21,7 @@ export const Banner = () => {
         },delta)
 
         return () =>{ clearInterval(ticker)};
-    } ,[text])
+    } ,[text,delta])
 
     const tick = () =>{
         let i = loopNum % toRotate.length;
@@ -45,9 +45,9 @@ export const Banner = () => {
     }
     return(
         <section className="banner" id="home">
-            <img src={mercury} className="absolute mercury-img" />
+            <img src={mercury} className="absolute mercury-img" alt="mercury"/>
             <div className="rotate">
-            <img src={saturne} className="absolute saturne-img" />
+            <img src={saturne} className="absolute saturne-img" alt="absolute"/>
             </div>
             
             <Container>
@@ -59,7 +59,7 @@ export const Banner = () => {
                         <button onClick={()=>console.log('CONNECT')}>Let's connect<ArrowRightCircle size={25}/></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} />
+                        <img src={headerImg} alt="headerImg"/>
                     </Col>
                 </Row>
             </Container>
