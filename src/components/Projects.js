@@ -12,16 +12,19 @@ export const Projects = ()=>{
             title:"Portfolio",
             description:"",
             imgUrl:projImg1,
+            alt:"img1"
         },
         {
             title:"CitizenConnect ",
             description:"",
             imgUrl:projImg2,
+            alt:"img2"
         },
         {
             title:"Vanilla Pay",
             description:"",
             imgUrl:projImg3,
+            alt:"img3"
         },
         
         
