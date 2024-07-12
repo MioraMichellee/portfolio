@@ -42,9 +42,7 @@ export const Projects = ()=>{
                         <Nav.Item>
                             <Nav.Link eventKey="second">Certifications</Nav.Link>
                         </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link eventKey="third">Badges</Nav.Link>
-                        </Nav.Item>
+                        
                     </Nav>
                     <Tab.Content> <br/><br/>
                         <Tab.Pane eventKey="first">
