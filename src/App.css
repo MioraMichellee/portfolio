@@ -104,18 +104,43 @@ p.danger {
   height: 5%;
   
   background: #dd8a1b;
-  margin-left: 61%;
+  margin-left: 64%;
   margin-top: 42rem;
   border-radius: 84%;
+
+  opacity: .8;
+  background: #843705;
   filter: blur(72px);
+  left: -5vw;
 }
-.blur2{
-  width: 4rem;
-  height: 12rem;
+.blur3{
+  width: 31%;
+  height: 5%;
+  
   background: #dd8a1b;
-  /* background-image: linear-gradient(#49270D, #DF8C1B); */
+  margin-left: 64%;
+  margin-top: 24rem;
+  border-radius: 84%;
+
+  opacity: .8;
+  background: #843705;
   filter: blur(72px);
-  margin-top: 16rem;
+  left: -5vw;
+}
+.blur-round{
+
+  width: 120px;
+  height: 109px;
+  border-radius: 100%;
+  opacity: .8;
+  margin-top: 24rem;
+  background:#843705;
+  filter: blur(40px);
+  left: -5vw;
+}
+
+.three-rem{
+  top: -8vw;
 }
 /************ Navbar Css ************/
 nav.navbar {
@@ -148,6 +173,12 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 span.navbar-text {
     display: flex;
     align-items: center;
+}
+.navbar-brand h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  display: block;
 }
 .social-icon {
     display: inline-block;
@@ -357,11 +388,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
+    /* color: #B8B8B8;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    margin: 14px 0 75px 0;
+    margin: 14px 0 75px 0; */
+
+    color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 61%;
 }
 .skill-slider {
   width: 80%;
@@ -400,7 +439,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 56%;
+  width: 68%;
+
+  
 }
 .project .nav.nav-pills {
   width: 55%;
@@ -510,7 +551,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Contact Css ************/
 .contact {
-  background: linear-gradient(90.21deg, rgb(234, 147, 28) -5.91%, rgb(52, 25, 11) 111.58%);
+  /* background: linear-gradient(90.21deg, rgb(234, 147, 28) -5.91%, rgb(52, 25, 11) 111.58%); */
   padding: 60px 0 0 0;
 }
 .contact img {
@@ -579,4 +620,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
+}
+
+.submit{
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 8px 10px;
+  /* background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%); */
+  background: linear-gradient(90.21deg, rgb(234, 147, 28) -5.91%, rgb(52, 25, 11) 111.58%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
 }
