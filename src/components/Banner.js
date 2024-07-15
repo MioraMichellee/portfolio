@@ -10,7 +10,7 @@ export const Banner = () => {
 
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Web Developper", "Mobile Developer", "UI/UX Designer"];
+    const toRotate = ["Web Developer", "Mobile Developer" ,"Software Developer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState('');
     const period = 2000;
