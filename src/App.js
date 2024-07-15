@@ -10,7 +10,8 @@ function App() {
   return (
     <div className="App">
       <div className='absolute blur blur1'></div>
-      <div className='absolute blur blur2'></div>
+      {/* <div className='absolute blur blur-round 3rem'></div> */}
+      {/* <div className='absolute blur blur-round prj1'></div> */}
       <NavBar/>
       <Banner />
       <Skills/>
