@@ -2,8 +2,11 @@ import { Container } from "react-bootstrap"
 import { ProjectCard } from "./ProjectCard"
 import {Col,Nav, Tab, Row} from "react-bootstrap"
 import projImg1 from "../assets/img/portfolio.png"
-import projImg2 from "../assets/img/portfolio.png"
-import projImg3 from "../assets/img/portfolio.png"
+import projImg2 from "../assets/img/Projet2.png"
+import projImg3 from "../assets/img/Projet3.png"
+
+import cert1 from "../assets/img/cert1.jpg"
+import cert2 from "../assets/img/cert2.png"
 
 export const Projects = ()=>{
     const projects =[
@@ -16,26 +19,44 @@ export const Projects = ()=>{
         {
             title:"CitizenConnect ",
             description:"",
-            imgUrl:projImg2,
+            imgUrl:projImg3,
             alt:"img2"
         },
         {
             title:"Vanilla Pay",
             description:"",
-            imgUrl:projImg3,
+            imgUrl:projImg2,
             alt:"img3"
         },
         
         
     ]
         
+    const certifications =[
+        {
+            title:"English for STEM",
+            description:"",
+            imgUrl:cert1,
+            alt:"cert1"
+        },
+        {
+            title:"SQL Basic ",
+            description:"",
+            imgUrl:cert2,
+            alt:"cert2"
+        },
+       
+        
+        
+    ]
     return (
-    <section className="project" id="project">
+    <section className="project" id="projects">
+        <div className='absolute blur blur-round three-rem'></div>
         <Container>
             <Row>
                 <Col>
                     <h2>Projects & Certifications</h2>
-                    <p>Lorem</p>
+                    <p>Like stars in the vast cosmos, each project and certification illuminates my journey and reflect my commitment to continuous learning and innovation. Below are some highlights of my work and achievements. For a more comprehensive view, including additional projects, please visit my GitHub.</p>
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" defaultActiveKey="/home">
                         <Nav.Item>
@@ -61,7 +82,20 @@ export const Projects = ()=>{
                                 }
                             </Row>
                         </Tab.Pane>
-                        <Tab.Pane eventKey="second"> Loren Ipsum </Tab.Pane>
+                        <Tab.Pane eventKey="second">
+                        <Row>
+                                {
+                                    certifications.map((certificate,index)=>{
+                                        return(
+                                            <ProjectCard
+                                                key={index}
+                                                {...certificate}
+                                            />
+                                        )
+                                    })
+                                }
+                            </Row>
+                         </Tab.Pane>
                         <Tab.Pane eventKey="third"> Loren Ipsum </Tab.Pane>
                     </Tab.Content>
                     </Tab.Container>

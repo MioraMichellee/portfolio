@@ -84,6 +84,7 @@ export const Contact = () => {
                         </form>
                     </Col>
                     <Col className="align-items-center" md={6}>
+                    <div class="absolute blur blur3"></div>
                         <img src={contactImg} alt="Contact us"/>
                     </Col>
                 </Row>
