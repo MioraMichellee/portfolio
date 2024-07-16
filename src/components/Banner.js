@@ -54,7 +54,7 @@ export const Banner = () => {
             
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7}>
+                    <Col xs={12} md={6} xl={7} style={{marginTop:"4vw"}}>
                     <TrackVisibility>
                         {({ isVisible }) =>
                             <div className={isVisible ? "animate__animated animate__fadeIn animate__slow-5 animate__delay-0.01s" : ""}>
