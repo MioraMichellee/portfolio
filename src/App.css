@@ -20,6 +20,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 html {
@@ -31,9 +32,14 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #000409 !important;
+  /* background-color: #000409 !important; */
+  background-image: url('https://img.freepik.com/photos-gratuite/ciel-etoile_1048-11828.jpg');
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+}
+
+.App{
+  background-color: #0000006e;
 }
 
 h1, h2, h3, h4, h5, h6 {
