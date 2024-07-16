@@ -92,13 +92,19 @@ p.danger {
 .absolute {
   position: absolute;
 }
+.fixed{
+  position:fixed;
+}
 
 .mercury-img{
   width: 10%;
 }
 .saturne-img{ 
-  width: 11rem;
-  margin-top: 17%;
+  /* width: 100%;
+  margin-top: 17%; */
+  width: 14%;
+  margin-top: 10%;
+  margin-left: -49%;
 }
 .rotate{
   transform: rotate(-25deg);
@@ -406,7 +412,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 61%;
+  width: 100%;
 }
 .skill-slider {
   width: 80%;
@@ -445,7 +451,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
-  width: 68%;
+  width: 100%;
 
   
 }
