@@ -5,11 +5,18 @@ import { Banner } from './components/Banner';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
+import './style.css'
 
 function App() {
   return (
     <div className="App">
-      <div className='absolute blur blur1'></div>
+
+<section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+
+        <div className='absolute blur blur1'></div>
       {/* <div className='absolute blur blur-round 3rem'></div> */}
       {/* <div className='absolute blur blur-round prj1'></div> */}
       <NavBar/>
@@ -17,6 +24,9 @@ function App() {
       <Skills/>
       <Projects/>
       <Contact/>
+        
+    </section>
+     
     </div>
   );
 }
