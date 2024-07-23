@@ -7,7 +7,13 @@ import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import './style.css'
 
+
 function App() {
+    const playAudio = () => {
+    let audio = new Audio('/assets/audio/audio.wav'); // Assurez-vous que le chemin est correct
+    audio.play();
+  }
+
   return (
     <div className="App">
 
@@ -20,6 +26,8 @@ function App() {
       {/* <div className='absolute blur blur-round 3rem'></div> */}
       {/* <div className='absolute blur blur-round prj1'></div> */}
       <NavBar/>
+
+      <button onClick={playAudio}>Play</button>
       <Banner />
       <Skills/>
       <Projects/>
