@@ -21,11 +21,11 @@
     padding-left: 10px;
 }
 
-#title span {
+/* #title span {
     background: -webkit-linear-gradient(white, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
 
 #stars {
     width: 1px;
