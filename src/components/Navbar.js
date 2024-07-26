@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 // import logo from '../assets/img/logo.svg';
 import navIcon from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon4.svg';
+import navIcon4 from '../assets/img/nav-icon4.svg';
 
 export const NavBar = () =>{
 
@@ -51,7 +51,7 @@ export const NavBar = () =>{
             <div className='social-icon'>
                 <a href="https://www.linkedin.com/in/mioramichelle/"><img src={navIcon} alt=""/></a>
                 <a href="https://web.facebook.com/miora.ratsimbazafy.31/"><img src={navIcon2} alt=""/></a>
-                <a href="https://github.com/MioraMichellee"><img src={navIcon3} alt=""/></a>
+                <a href="https://github.com/MioraMichellee"><img src={navIcon4} alt=""/></a>
             </div>
             <button className='vvd' onClick={()=> console.log('connect')}>
                 <span>Let's Connect </span></button>
