@@ -25,7 +25,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 75px;
+  scroll-padding-top: 60px;
 }
 
 body {
@@ -389,7 +389,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-bx {
-  background: #151515;
+  background: #000409;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;

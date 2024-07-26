@@ -11,7 +11,7 @@ export const Banner = () => {
 
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Web Developer", "Mobile Developer" ,"Software Developer"];
+    const toRotate = ["Web Developer" ,"Software Developer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState('');
     const period = 2000;
@@ -54,7 +54,7 @@ export const Banner = () => {
             
             <Container>
                 <Row className="align-items-center">
-                    <Col xs={12} md={6} xl={7} style={{marginTop:"4vw"}}>
+                    <Col xs={12} md={6} xl={7} style={{marginTop:"-0rem"}}>
                     <TrackVisibility>
                         {({ isVisible }) =>
                             <div className={isVisible ? "animate__animated animate__fadeIn animate__slow-5 animate__delay-0.01s" : ""}>
