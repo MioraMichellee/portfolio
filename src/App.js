@@ -5,7 +5,9 @@ import { Banner } from './components/Banner';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
+import { Loader } from './components/Loader/Loader';
 import './style.css'
+import { useEffect, useState } from 'react';
 
 
 function App() {
@@ -14,11 +16,23 @@ function App() {
     audio.play();
   }
 
+  const [isLoading, setIsLoading] = useState(true)
+  useEffect(() =>{
+      const fakeDataFetch = () => {
+        setTimeout(()=>{
+          setIsLoading(false)
+        },5000)
+      }
+    
+    fakeDataFetch();
+  }, [])
+
+
   return (
     <div className="App">
 
 <section class="wrapper">
-        <div id="stars"></div>
+       {isLoading? <Loader/> : <> <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
 
@@ -27,11 +41,11 @@ function App() {
       {/* <div className='absolute blur blur-round prj1'></div> */}
       <NavBar/>
 
-      <button onClick={playAudio}>Play</button>
+      {/* <button onClick={playAudio}>Play</button> */}
       <Banner />
       <Skills/>
       <Projects/>
-      <Contact/>
+      <Contact/></>}
         
     </section>
      
